@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,72 @@
     <title>Inspected - проверенные автомобили</title>
     <link rel="icon" href="./img/icon.png">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="menu">
-                <div class="logo">
-                    <a href="#">
-                        <img src="./img/logo-black-desktop.png" alt="Inspected.By">
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">О Сервисе</a></li>
-                        <li><a href="#">Клиентам</a></li>
-                        <li><a href="#">Демо</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+    <header class="container">
+        <div class="menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo-black-desktop.png" alt="Inspected.By">
                 </a>
             </div>
-    
+            <nav>
+                <ul>
+                    <li><a href="#">О Сервисе</a></li>
+                    <li><a href="#">Клиентам</a></li>
+                    <li><a href="#">Демо</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-    
+
+
     </header>
     <main>
-        <section class="banner">
-            <div class="container">
-                <div class="heading">
-                    <h1>Подробные отчеты о состоянии авто для ваших клиентов.</h1>
-                    <button class="button-large">Пример отчета</button>
-                </div>
+        <section class="banner container">
+            <div class="heading">
+                <h1>Подробные отчеты о состоянии авто для ваших клиентов.</h1>
+                <button class="button-large">Пример отчета</button>
             </div>
         </section>
+        <section class="features container">
+            <h2 class="section__title">Любое транспортное средство. Детально.</h2>
+            <div class="features__items">
+                <div class="fetures__item">
+                    <img src="./img/body.png" alt="Body">
+                    <h3>Кузов</h3>
+                </div>
+                <div class="fetures__item">
+                    <img src="./img/engine.png" alt="Engine">
+                    <h3>Двигатель</h3>
+                </div>
+                <div class="fetures__item">
+                    <img src="./img/gearbox.png" alt="Gearbox">
+                    <h3>Трансмиссия</h3>
+                </div>
+                <div class="fetures__item">
+                    <img src="./img/suspension.png" alt="Suspension">
+                    <h3>Ходовая часть</h3>
+                </div>
+                <div class="fetures__item">
+                    <img src="./img/diagnostics.png" alt="Diagnostics">
+                    <h3>Результаты компьютерной диагностики</h3>
+                </div>
+                <div class="fetures__item">
+                        <img src="./img/law.png" alt="Law">
+                        <h3>Юридическая информация</h3>
+                </div>
+            </div>
+        
+        </section>
     </main>
-    
+
 </body>
+
 </html>

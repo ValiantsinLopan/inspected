@@ -1,4 +1,9 @@
 /** Common elements **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -6,26 +11,37 @@ body {
 }
 
 .container {
-    padding: 0 50px 0 50px;
+    display: flex;
+    padding: 0 15px;
     width: 100%;
 }
 
-@media (max-width: 992px) {
-    .container {
-        padding: 0 15px 0 15px;
-    }
-
-    nav {
-        display: none;
-    }
+a {
+    text-decoration: none;
+    color: #666666;
+    white-space: nowrap;
 }
-/** Nav bar**/
 
+a:hover {
+    color: #050708;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.section__title {
+    margin-bottom: 50px;
+    align-self: center;
+    font-size: 2rem;
+}
+
+/** Nav bar**/
 header {
-    display: flex;
+    position: fixed;
     background-color: #f8dc08;
     height: 10vh;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     width: 100%;
     align-items: center;
@@ -39,6 +55,10 @@ header {
     height: 100%;
 }
 
+nav {
+    display: none;
+}
+
 nav ul {
     display: flex;
     margin-left: auto;
@@ -50,16 +70,6 @@ nav ul li {
     padding-left: 2.15rem;
     padding-right: 2.15rem;
     font-weight: 600;
-}
-
-a {
-    text-decoration: none;
-    color: #666666;
-    white-space: nowrap;
-}
-
-a:hover {
-    color: #050708;
 }
 
 .icon {
@@ -99,5 +109,52 @@ button:hover {
     font-weight: 600;
     color: white;
     padding: 1rem 2rem;
+}
+
+/**Features **/
+.features {
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.features__items {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
+.fetures__item {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 15px 15px 15px;
+    padding: 10px;
+}
+
+.fetures__item:hover {
+    background-color: #f8dc08;
+}
+
+.fetures__item img {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+
+/**Media queries**/
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .features {
+        padding: 50px 0;
+    }
+
+    nav {
+        display: inline-block;
+    }
 }
 
