@@ -1,4 +1,5 @@
 /** Common elements **/
+
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +19,21 @@ body {
 
 a {
     text-decoration: none;
-    color: #666666;
+    color: #050708;
     white-space: nowrap;
 }
 
-a:hover {
-    color: #050708;
-    cursor: pointer;
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+a:hover::after {
+    width: 100%;
 }
 
 h1 {
@@ -45,7 +54,19 @@ ul {
     font-size: 2rem;
 }
 
+figure {
+    margin: 0;
+    height: 100%;
+}
+
+.features, .clients {
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /** Nav bar**/
+
 header {
     position: fixed;
     background-color: #f8dc08;
@@ -71,7 +92,6 @@ nav {
 nav ul {
     display: flex;
     margin-left: auto;
-    
     height: 100%;
 }
 
@@ -81,40 +101,27 @@ nav ul li {
     font-weight: 600;
 }
 
-.icon {
-    display: none;
-}
-
-.features, .clients {
-    padding: 15px;
-    justify-content: center;
-    flex-direction: column;
-}
-figure {
-    margin: 0;
-    height: 100%;
-}
-
 /** Banner **/
+
 .banner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cars.jpg);
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .heading {
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
     max-width: 80%;
 }
 
 button {
-    border: 2px solid #f8dc08;
+    border: 2px solid;
     background-color: transparent;
 }
 
@@ -126,7 +133,7 @@ button:hover {
 .button-large {
     font-size: 1.5rem;
     font-weight: 600;
-    color: white;
+    color: #ffffff;
     padding: 1rem 2rem;
 }
 
@@ -155,6 +162,7 @@ button:hover {
 }
 
 /**Clients**/
+
 .clients__items {
     display: flex;
     align-items: stretch;
@@ -166,8 +174,9 @@ button:hover {
 .clients__item {
     position: relative;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
 }
+
 .clients__item img {
     position: relative;
     width: 100%;
@@ -180,7 +189,7 @@ button:hover {
     left: 20px;
     bottom: 20px;
     z-index: 99;
-    color: white;
+    color: #ffffff;
 }
 
 .client__description h3 {
@@ -188,12 +197,13 @@ button:hover {
 }
 
 /**Footer**/
+
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: row wrap;
-    background: #666666;
+    background: #050708;
     padding-top: 15px;
 }
 
@@ -201,7 +211,12 @@ footer ul li a {
     display: block;
     padding: 1rem 2.15rem 1rem 0;
     font-size: 1rem;
+    font-weight: 500;
     color: #f8dc08;
+}
+
+footer ul li a:hover {
+    color: #ffffff;
 }
 
 footer ul li {
@@ -209,35 +224,39 @@ footer ul li {
     vertical-align: top;
 }
 
-/**Media queries**/
-@media (min-width: 576px) {
+.lol::before {
+    content: "\f095";
+    font-size: 14px;
 }
 
-@media (min-width: 768px) { }
+/**Media queries**/
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
 
 @media (min-width: 992px) {
     .container {
         padding: 50px;
     }
-
-    .features, .clients  {
+    .features, .clients {
         padding: 50px;
     }
-
     nav {
         display: inline-block;
+    }
+    .icon {
+        display: none;
     }
     .clients__item {
         width: 50%;
     }
 }
 
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
 
 @media (min-width: 1920px) {
     .clients__item {
         width: 25%;
     }
 }
-
