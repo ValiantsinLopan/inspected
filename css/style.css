@@ -12,7 +12,7 @@ body {
 
 .container {
     display: flex;
-    padding: 0 15px;
+    padding: 15px;
     width: 100%;
 }
 
@@ -24,6 +24,7 @@ a {
 
 a:hover {
     color: #050708;
+    cursor: pointer;
 }
 
 h1 {
@@ -32,6 +33,10 @@ h1 {
 
 h3 {
     font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
 }
 
 .section__title {
@@ -66,7 +71,7 @@ nav {
 nav ul {
     display: flex;
     margin-left: auto;
-    list-style: none;
+    
     height: 100%;
 }
 
@@ -182,14 +187,37 @@ button:hover {
     border-bottom: 2px solid #f8dc08;
 }
 
+/**Footer**/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    background: #666666;
+    padding-top: 15px;
+}
+
+footer ul li a {
+    display: block;
+    padding: 1rem 2.15rem 1rem 0;
+    font-size: 1rem;
+    color: #f8dc08;
+}
+
+footer ul li {
+    display: inline-block;
+    vertical-align: top;
+}
+
 /**Media queries**/
-@media (min-width: 576px) { }
+@media (min-width: 576px) {
+}
 
 @media (min-width: 768px) { }
 
 @media (min-width: 992px) {
     .container {
-        padding: 0 50px;
+        padding: 50px;
     }
 
     .features, .clients  {
