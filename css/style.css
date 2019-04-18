@@ -96,16 +96,18 @@ header.container {
 .main-menu {
     display: none;
     text-align: center;
+    height: 100vh;
 }
 
 .main-menu ul {
-    display: inline-block;
+    display: flex;
     margin-left: auto;
     height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .main-menu ul li {
-    padding: 2.15rem;
     font-weight: 600;
 }
 
@@ -269,9 +271,11 @@ footer ul li {
     .main-menu {
         display: block;
         float: right;
+        height: 100%;
     }
     .main-menu ul {
         display: flex;
+        flex-direction: row;
     }
     .main-menu ul li {
         padding: 1rem 2.15rem 0;
