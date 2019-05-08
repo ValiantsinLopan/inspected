@@ -8,9 +8,7 @@
     <title>Inspected - проверенные автомобили</title>
     <link rel="icon" href="./img/icon.png">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -27,10 +25,10 @@
             </label>
             <nav class="main-menu">
                 <ul>
-                    <li><a href="#">О Сервисе</a></li>
-                    <li><a href="#">Клиентам</a></li>
+                    <li><a href="#features">О Сервисе</a></li>
+                    <li><a href="#clients">Клиентам</a></li>
                     <li><a href="#">Демо</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
 
@@ -41,12 +39,12 @@
     <main>
         <section class="banner container">
             <div class="heading">
-                <h1>Подробные отчеты о состоянии авто для ваших клиентов.</h1>
+                <h1>Подробные отчеты о состоянии авто для ваших клиентов</h1>
                 <button class="button-large">Пример отчета</button>
             </div>
         </section>
-        <section class="features container">
-            <h2 class="section__title">Любое транспортное средство. Детально.</h2>
+        <section class="features container" id="features">
+            <h2 class="section__title">Любое транспортное средство. Детально</h2>
             <div class="features__items">
                 <div class="fetures__item">
                     <img src="./img/body.png" alt="Body">
@@ -74,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="clients container">
+        <section class="clients container" id="clients">
             <h2 class="section__title">Нам доверяют профессионалы автомобильного бизнеса</h2>
             <div class="clients__items">
                 <div class="clients__item">
@@ -104,11 +102,11 @@
                 </div>
                 <div class="clients__item">
                     <figure>
-                        <img src="./img/bodyshop.jpg" alt="BodyShop">
+                        <img src="./img/detailing.jpg" alt="BodyShop">
 
                     </figure>
                     <div class="client__description">
-                        <h3>Станиции диагностики</h3>
+                        <h3>Детейлинг центры</h3>
                     </div>
                 </div>
             </div>
@@ -120,18 +118,18 @@
                 <img src="./img/logo-yelow.png" alt="Inspected.By">
             </a>
         </div>
-        <ul class="contacts">
+        <ul class="contacts" id="contacts">
             <li>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                <a href="https://www.instagram.com/" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/" target="_blank">ВКонтакте</a>
+                <a class="icon instagram" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a class="icon facebook" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="icon vk" href="https://www.vk.com/" target="_blank">ВКонтакте</a>
             </li>
             <li>
-                <a href="mailto:info@inspected.by">info@inspected.by</a>
-                <a href="tel:+375 44 000 00 00">+375 44 000 00 00</a>
+                <a class="icon mail" href="mailto:info@inspected.by">info@inspected.by</a>
+                <a class="icon phone" href="tel:+375 44 000 00 00">+375 44 000 00 00</a>
             </li>
             <li>
-                <a href="https://goo.gl/maps/ka2D8mTc6Hk" target="_blank">Минск. Октябрьская, 1</a>
+                <a class="icon location" href="https://goo.gl/maps/ka2D8mTc6Hk" target="_blank">Минск. Октябрьская, 1</a>
             </li>
         </ul>
     </footer>
